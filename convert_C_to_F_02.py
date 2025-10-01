@@ -1,8 +1,9 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Makiko Michelle Yasumi
+# DATE: October 1, 2025
+# BRIEF DESCRIPTION:  This program allows users to choose to convert between Celsius and Fahrenheit in both directions.
+# Then, the user can enter the temperature, and the program outputs the conversion.
 
 
 
@@ -15,13 +16,27 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+def main():
+    convert()
 
+def convert():
+    print("=" * 5 + " Temperature Converter " + "=" * 5)
+    
+    print("\n1. Convert from Celsius to Fahrenheit")
+    print("2. Convert from Fahrenheit to Celsius")
 
+    choice = int(input("\nPlease choose from the above menu: "))
 
+    if choice == 1:
+        celsius = int(input("Enter a temperature to convert: "))
+        converted_f = celsius * 9/5 + 32
+        print(f"{celsius:.1f}degrees Celsius is {converted_f:.1f} degrees Fahrenheit.")
+    else:
+        fahrenheit = int(input("Enter a temperature to convert: "))
+        converted_c = (fahrenheit - 32) * 5/9
+        print(f"{fahrenheit:.1f} degrees Fahrenheit is {converted_c:.1f} degrees Celsius.")
 
-
-
-
+main()
 
 
 ########### END YER CODE ABOVE THIS LINE ###########
@@ -93,10 +108,7 @@ Enter a temperature to convert: -40
 
 1. What is one lesson you learned in this lab?
 
-
-
-
-
+How to spell "fahrenheit."
 
 
 '''
