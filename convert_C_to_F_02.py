@@ -22,19 +22,19 @@ def main():
 def convert():
     print("=" * 5 + " Temperature Converter " + "=" * 5)
     
-    print("\n1. Convert from Celsius to Fahrenheit")
-    print("2. Convert from Fahrenheit to Celsius")
+    print("\n  1. Convert from Celsius to Fahrenheit")
+    print("  2. Convert from Fahrenheit to Celsius")
 
     choice = int(input("\nPlease choose from the above menu: "))
 
     if choice == 1:
         celsius = int(input("Enter a temperature to convert: "))
         converted_f = celsius * 9/5 + 32
-        print(f"{celsius:.1f}degrees Celsius is {converted_f:.1f} degrees Fahrenheit.")
+        print(f"\n{celsius:.1f} degrees Celsius is {converted_f:.1f} degrees Fahrenheit.")
     else:
         fahrenheit = int(input("Enter a temperature to convert: "))
         converted_c = (fahrenheit - 32) * 5/9
-        print(f"{fahrenheit:.1f} degrees Fahrenheit is {converted_c:.1f} degrees Celsius.")
+        print(f"\n{fahrenheit:.1f} degrees Fahrenheit is {converted_c:.1f} degrees Celsius.")
 
 main()
 
